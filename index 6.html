@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A One Beauty Salon | Braids, Nails & Hair in Al Haram, Giza</title>
+<meta name="description" content="Rated 4.9 by 755 clients on Google. Box braids, nail art and hair styling in Al Haram, Giza. Book on WhatsApp.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=DM+Sans:wght@400;500;700&family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#2A0F3D;--deep:#1A0828;--pink:#FF3E9A;--blue:#2E8BFF;--blush:#FFE9F3;--lilac:#EBDDFB;--br:#2E8BFF;--r:26px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans','Cairo',sans-serif;background:var(--blush);color:var(--plum);line-height:1.6;overflow-x:hidden}
+[dir=rtl] body,[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3{font-family:'Cairo',sans-serif}
+h1,h2,h3{font-family:'Syne','Cairo',sans-serif;line-height:1.02;letter-spacing:-.025em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.wrap{max-width:1140px;margin:auto;padding:0 24px}
+section{padding:92px 0}
+nav{position:fixed;inset:0 0 auto;z-index:50;transition:.4s}
+nav.s{background:#ffe9f3e6;backdrop-filter:blur(14px)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{font:800 1.3rem 'Syne';letter-spacing:-.02em}.logo b{color:var(--pink)}
+.nl{display:flex;gap:26px;font-weight:500}.nl a:hover{color:var(--pink)}
+.lang{border:1.5px solid var(--plum);background:none;border-radius:99px;padding:8px 16px;font:700 .9rem 'Cairo';cursor:pointer;color:var(--plum)}
+.btn{display:inline-block;padding:15px 28px;border-radius:99px;font-weight:700;border:0;cursor:pointer;font:700 1rem inherit;font-family:inherit;transition:transform .25s,box-shadow .25s}
+.btn.p{background:var(--pink);color:#fff;box-shadow:0 12px 30px -10px var(--pink)}
+.btn.p:hover{transform:translateY(-3px) rotate(-1deg)}
+.btn.o{border:1.5px solid var(--plum)}.btn.o:hover{background:var(--plum);color:#fff}
+/* hero */
+.hero{min-height:100svh;padding:110px 0 60px;display:flex;align-items:center;background:radial-gradient(700px 500px at 80% 30%,#f9c6e2 0,transparent 65%)}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(3rem,7.5vw,6rem);font-weight:800}
+.hero h1 em{font-style:normal;display:block;color:var(--pink)}
+.hero h1 span{display:inline-block;opacity:0;transform:translateY(60px) rotate(4deg);animation:up .9s cubic-bezier(.2,.9,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.lead{font-size:1.15rem;max-width:44ch;margin:20px 0 26px;opacity:0;animation:up 1s .9s forwards}
+.pick{opacity:0;animation:up 1s 1.1s forwards}
+.pick small{display:block;font-weight:700;margin-bottom:10px}
+.sw{display:flex;gap:12px}
+.sw button{width:42px;height:42px;border-radius:50%;border:3px solid #fff;cursor:pointer;box-shadow:0 0 0 0 var(--plum);transition:.25s}
+.sw button:hover{transform:scale(1.15)}.sw button[aria-pressed=true]{box-shadow:0 0 0 3px var(--plum);transform:scale(1.1)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;opacity:0;animation:up 1s 1.3s forwards}
+.braids{position:relative;max-width:440px;margin:auto;width:100%}
+.braids svg{width:100%;overflow:visible}
+.bd{fill:none;stroke:var(--br);stroke-width:13;stroke-linecap:round;stroke-dasharray:1 15;transition:stroke .5s;transform-origin:50% 0;animation:sway 5s ease-in-out infinite}
+.bd.t{stroke:#2b1636;stroke-width:13;stroke-dasharray:1 15}
+.bd.base{stroke-dasharray:none;stroke-width:5;opacity:.35;stroke:var(--br)}
+@keyframes sway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+.reveal{stroke-dashoffset:0;clip-path:inset(0 0 100% 0);animation:drop 2.2s .3s cubic-bezier(.3,.8,.3,1) forwards,sway 5s 2.5s ease-in-out infinite}
+@keyframes drop{to{clip-path:inset(0 0 0 0)}}
+.tag{position:absolute;background:#fff;border-radius:18px;padding:12px 16px;font-weight:700;box-shadow:0 18px 40px -18px #2a0f3d88;font-size:.9rem;animation:bob 5s ease-in-out infinite}
+.tag small{display:block;font-weight:400;opacity:.7}
+@keyframes bob{50%{transform:translateY(-12px)}}
+/* marquee */
+.mq{background:var(--plum);color:#fff;overflow:hidden;white-space:nowrap;padding:18px 0;font:800 1.4rem 'Syne'}
+.mq div{display:inline-block;animation:mq 28s linear infinite}
+.mq span{margin:0 28px;color:var(--pink)}
+@keyframes mq{to{transform:translateX(-50%)}}
+[dir=rtl] .mq div{animation-direction:reverse}
+/* services */
+h2{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;max-width:16ch}
+.sub{max-width:50ch;margin:14px 0 44px;opacity:.75}
+.sv{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:900px){.sv{grid-template-columns:1fr 1fr}.hero .wrap,.ct{grid-template-columns:1fr!important}.nl{display:none}.braids{max-width:320px}}
+@media(max-width:520px){.sv{grid-template-columns:1fr}}
+.sc{border-radius:var(--r);padding:28px 24px 34px;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;color:#fff;transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
+.sc:hover{transform:translateY(-10px) rotate(-1.5deg)}
+.sc:nth-child(1){background:linear-gradient(160deg,#2E8BFF,#1b3f9c)}
+.sc:nth-child(2){background:linear-gradient(160deg,#FF3E9A,#b0176a)}
+.sc:nth-child(3){background:linear-gradient(160deg,#8b5cf6,#4a1d96)}
+.sc:nth-child(4){background:linear-gradient(160deg,#ff9a6b,#d6477a)}
+.sc i{position:absolute;top:18px;inset-inline-start:22px;font-size:3rem;font-style:normal;transition:.5s}
+.sc:hover i{transform:scale(1.3) rotate(12deg)}
+.sc h3{font-size:1.6rem;margin-bottom:6px}.sc p{font-size:.93rem;opacity:.9}
+/* proof */
+.proof{background:var(--deep);color:#fff;text-align:center}
+.big{font:800 clamp(5rem,16vw,11rem)/1 'Syne';color:var(--pink)}
+.stars{color:#ffc93c;font-size:2rem;letter-spacing:6px;margin:6px 0 12px}
+.proof p{max-width:44ch;margin:auto;opacity:.8}
+/* how */
+.hw{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:760px){.hw{grid-template-columns:1fr}}
+.hw div{background:#fff;border-radius:var(--r);padding:28px;transition:.3s}
+.hw div:hover{background:var(--lilac)}
+.hw h3{font-size:1.3rem;margin-bottom:6px}
+/* contact */
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.fm{background:#fff;border-radius:var(--r);padding:32px}
+.fm h2{font-size:2.2rem}
+.fm label{display:block;font-weight:700;font-size:.9rem;margin:14px 0 6px}
+.fm input,.fm select{width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid #2a0f3d22;font:inherit;background:var(--blush);color:var(--plum)}
+.fm input:focus,.fm select:focus{outline:0;border-color:var(--pink)}
+.fm .btn{width:100%;margin-top:22px}
+.in{display:flex;flex-direction:column;gap:16px}
+.in .r{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:18px;padding:16px}
+.in .r span{font-size:1.5rem}
+.map{border:0;border-radius:var(--r);width:100%;flex:1;min-height:230px}
+footer{background:var(--deep);color:#c7a8e6;text-align:center;padding:34px;font-size:.9rem}
+.wa{position:fixed;bottom:22px;inset-inline-end:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25D366;display:grid;place-items:center;font-size:1.7rem;box-shadow:0 12px 30px -8px #25d366}
+.wa:before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:ring 2s infinite}
+@keyframes ring{to{transform:scale(1.7);opacity:0}}
+.rv{opacity:0;transform:translateY(34px);transition:1s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,.rv{animation:none!important;transition:none!important;opacity:1!important;transform:none!important;clip-path:none!important}}
+</style>
+</head>
+<body>
+<nav id="nav"><div class="wrap">
+ <a href="#top" class="logo">A one <b>beauty</b></a>
+ <div class="nl"><a href="#services" data-i="n1">Services</a><a href="#reviews" data-i="n2">Reviews</a><a href="#how" data-i="n3">Booking</a><a href="#book" data-i="n4">Contact</a></div>
+ <button class="lang" id="lang">العربية</button>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <div>
+  <h1 id="h1"></h1>
+  <p class="lead" data-i="lead">Box braids, nail art and hair styling in Al Haram, Giza. Pick a colour below and see it on the braids.</p>
+  <div class="pick"><small data-i="pk">Choose your braid colour</small>
+   <div class="sw" id="sw">
+    <button style="background:#2E8BFF" data-c="#2E8BFF" data-n="Electric blue" aria-label="Electric blue" aria-pressed="true"></button>
+    <button style="background:#FF3E9A" data-c="#FF3E9A" data-n="Hot pink" aria-label="Hot pink" aria-pressed="false"></button>
+    <button style="background:#9b5cf6" data-c="#9b5cf6" data-n="Violet" aria-label="Violet" aria-pressed="false"></button>
+    <button style="background:#d9822b" data-c="#d9822b" data-n="Copper" aria-label="Copper" aria-pressed="false"></button>
+    <button style="background:#ff4d3d" data-c="#ff4d3d" data-n="Red" aria-label="Red" aria-pressed="false"></button>
+   </div></div>
+  <div class="cta"><a class="btn p" href="#book" data-i="cta1">Book this look</a><a class="btn o" id="call" href="#" data-i="cta2">Call us</a></div>
+ </div>
+ <div class="braids">
+  <svg viewBox="0 0 300 420" aria-hidden="true" id="bsvg"></svg>
+  <div class="tag" style="top:4%;inset-inline-end:-4%"><span>★ 4.9</span><small data-i="tg1">755 Google reviews</small></div>
+  <div class="tag" style="bottom:6%;inset-inline-start:-4%;animation-delay:-2s"><span data-i="tg2">Open until 10 PM</span><small data-i="tg2s">Al Haram, Giza</small></div>
+ </div>
+</div></header>
+
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<section id="services"><div class="wrap">
+ <h2 class="rv" data-i="t1">Hair and nails, done right</h2>
+ <p class="sub rv" data-i="t1s">Walk in with an idea or a photo. We take it from there.</p>
+ <div class="sv rv">
+  <div class="sc"><i>🧵</i><h3 data-i="s1">Braids</h3><p data-i="s1p">Box braids and colour braids, neat from root to tip.</p></div>
+  <div class="sc"><i>💅</i><h3 data-i="s2">Nails</h3><p data-i="s2p">Gel and acrylic sets, tips and custom nail art.</p></div>
+  <div class="sc"><i>🎨</i><h3 data-i="s3">Hair colour</h3><p data-i="s3p">From soft tones to bold blues and pinks.</p></div>
+  <div class="sc"><i>💇‍♀️</i><h3 data-i="s4">Styling</h3><p data-i="s4p">Cuts, blow-dries and looks for any occasion.</p></div>
+ </div>
+</div></section>
+
+<section class="proof" id="reviews"><div class="wrap">
+ <div class="big rv" id="cnt">4.9</div>
+ <div class="stars rv">★★★★★</div>
+ <p class="rv" data-i="pf">From 755 clients on Google Maps. Our chairs are busy, so book ahead and skip the wait.</p>
+</div></section>
+
+<section id="how"><div class="wrap">
+ <h2 class="rv" data-i="t3">Book in three taps</h2>
+ <p class="sub rv" data-i="t3s">Tell us what you want and we confirm a time on WhatsApp.</p>
+ <div class="hw rv">
+  <div><h3 data-i="h1t">1. Pick your look</h3><p data-i="h1p">Choose a service and a colour, or send us a photo.</p></div>
+  <div><h3 data-i="h2t">2. Send the request</h3><p data-i="h2p">The form opens WhatsApp with your details filled in.</p></div>
+  <div><h3 data-i="h3t">3. Arrive on time</h3><p data-i="h3p">We confirm your slot, so you are not left waiting.</p></div>
+ </div>
+</div></section>
+
+<section id="book" style="padding-top:0"><div class="wrap ct">
+ <div class="fm rv">
+  <h2 data-i="t5">Book your visit</h2>
+  <form id="f">
+   <label for="n" data-i="l1">Your name</label><input id="n" required autocomplete="name">
+   <label for="p" data-i="l2">Phone</label><input id="p" type="tel" required autocomplete="tel">
+   <label for="s" data-i="l3">Service</label>
+   <select id="s"><option data-i="s1">Braids</option><option data-i="s2">Nails</option><option data-i="s3">Hair colour</option><option data-i="s4">Styling</option></select>
+   <button class="btn p" type="submit" data-i="send">Send on WhatsApp</button>
+  </form>
+ </div>
+ <div class="in rv">
+  <div class="r"><span>📍</span><div><b data-i="ad">Find us</b><br><span data-i="addr">Gate 4, Plot 440, Elgiesh Rd, Al Haram, Giza</span></div></div>
+  <div class="r"><span>🕙</span><div><b data-i="hr">Hours</b><br><span data-i="hrs">Open daily, closing at 10 PM</span></div></div>
+  <div class="r"><span>📞</span><div><b data-i="ph">Call or WhatsApp</b><br><a id="tel" href="#"></a></div></div>
+  <iframe class="map" title="Map" loading="lazy" src="https://maps.google.com/maps?q=29.9740959,31.0909145&z=16&output=embed"></iframe>
+  <a class="btn o" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=29.9740959,31.0909145" data-i="dir" style="text-align:center">Get directions</a>
+ </div>
+</div></section>
+
+<footer>© <span id="y"></span> A One Beauty Salon</footer>
+<a class="wa" id="wa" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script>
+/* ===== CONFIG: real number, country code + digits only ===== */
+const PHONE="201000000000";
+/* ===== Hours text is editable in the T object below (hrs) ===== */
+const T={
+en:{h1:"Braids that turn heads.",n1:"Services",n2:"Reviews",n3:"Booking",n4:"Contact",lead:"Box braids, nail art and hair styling in Al Haram, Giza. Pick a colour below and see it on the braids.",pk:"Choose your braid colour",cta1:"Book this look",cta2:"Call us",tg1:"755 Google reviews",tg2:"Open until 10 PM",tg2s:"Al Haram, Giza",
+t1:"Hair and nails, done right",t1s:"Walk in with an idea or a photo. We take it from there.",s1:"Braids",s1p:"Box braids and colour braids, neat from root to tip.",s2:"Nails",s2p:"Gel and acrylic sets, tips and custom nail art.",s3:"Hair colour",s3p:"From soft tones to bold blues and pinks.",s4:"Styling",s4p:"Cuts, blow-dries and looks for any occasion.",
+pf:"From 755 clients on Google Maps. Our chairs are busy, so book ahead and skip the wait.",t3:"Book in three taps",t3s:"Tell us what you want and we confirm a time on WhatsApp.",h1t:"1. Pick your look",h1p:"Choose a service and a colour, or send us a photo.",h2t:"2. Send the request",h2p:"The form opens WhatsApp with your details filled in.",h3t:"3. Arrive on time",h3p:"We confirm your slot, so you are not left waiting.",
+t5:"Book your visit",l1:"Your name",l2:"Phone",l3:"Service",send:"Send on WhatsApp",ad:"Find us",addr:"Gate 4, Plot 440, Elgiesh Rd, Al Haram, Giza",hr:"Hours",hrs:"Open daily, closing at 10 PM",ph:"Call or WhatsApp",dir:"Get directions",
+mq:["Box braids","Nail art","Colour","Styling","Al Haram, Giza"],msg:(n,p,s,c)=>`Hello A One, I'd like to book: ${s}. Colour: ${c}. Name: ${n}. Phone: ${p}`,btn:"العربية"},
+ar:{h1:"ضفائر تلفت الأنظار.",n1:"الخدمات",n2:"التقييمات",n3:"الحجز",n4:"تواصل",lead:"ضفائر بوكس وفن الأظافر وتسريحات الشعر في الهرم، الجيزة. اختاري لونك وشوفيه على الضفائر.",pk:"اختاري لون الضفائر",cta1:"احجزي هذا اللوك",cta2:"اتصلي بنا",tg1:"755 تقييم على جوجل",tg2:"مفتوح حتى 10 مساءً",tg2s:"الهرم، الجيزة",
+t1:"شعر وأظافر بإتقان",t1s:"تعالي بفكرة أو صورة ونحن نكمل الباقي.",s1:"الضفائر",s1p:"بوكس برايدز وضفائر ملونة منظمة من الجذور للأطراف.",s2:"الأظافر",s2p:"جل وأكريليك وتيبس ورسومات مخصصة.",s3:"صبغ الشعر",s3p:"من الدرجات الهادئة إلى الأزرق والوردي الجريء.",s4:"التسريحات",s4p:"قص وسشوار وإطلالات لكل مناسبة.",
+pf:"من 755 عميلة على خرائط جوجل. الكراسي مشغولة دائماً، احجزي مسبقاً وتجنبي الانتظار.",t3:"احجزي في ثلاث خطوات",t3s:"أخبرينا بما تريدين ونؤكد الموعد على واتساب.",h1t:"1. اختاري اللوك",h1p:"اختاري الخدمة واللون أو أرسلي لنا صورة.",h2t:"2. أرسلي الطلب",h2p:"النموذج يفتح واتساب ببياناتك جاهزة.",h3t:"3. تعالي في موعدك",h3p:"نؤكد لك الموعد حتى لا تنتظري.",
+t5:"احجزي زيارتك",l1:"الاسم",l2:"رقم الهاتف",l3:"الخدمة",send:"أرسلي عبر واتساب",ad:"العنوان",addr:"البوابة الرابعة، 440 ح، طريق الجيش، الهرم، الجيزة",hr:"المواعيد",hrs:"مفتوح يومياً حتى 10 مساءً",ph:"اتصال أو واتساب",dir:"احصلي على الاتجاهات",
+mq:["ضفائر بوكس","فن الأظافر","صبغة","تسريحات","الهرم، الجيزة"],msg:(n,p,s,c)=>`مرحباً، أرغب في حجز: ${s}. اللون: ${c}. الاسم: ${n}. الهاتف: ${p}`,btn:"English"}};
+let L="en",C="Electric blue";const $=s=>document.querySelector(s);
+/* braids */
+let sv="";const xs=[];for(let i=0;i<11;i++)xs.push(40+i*22);
+xs.forEach((x,i)=>{const sw=(i%2?1:-1)*(10+(i%3)*6),d=`M${x} 20 C${x+sw} 140 ${x-sw} 260 ${x+sw*.6} ${380-(i%3)*30}`;
+ sv+=`<path class="bd base" d="${d}" style="animation-delay:${-i*.35}s"/><path class="bd reveal ${i%4==0?'t':''}" d="${d}" style="animation-delay:${.3+i*.08}s,${2.5-i*.35}s"/>`});
+$("#bsvg").innerHTML=`<path d="M20 30Q150 -20 280 30L280 40Q150 10 20 40Z" fill="#2b1636"/>`+sv;
+function words(t){const[a,...b]=t.split(" ");const last=b.splice(-1);$("#h1").innerHTML=[a,...b].map((w,i)=>`<span style="animation-delay:${.1+i*.12}s">${w}</span>`).join(" ")+`<em><span style="animation-delay:.5s">${last}</span></em>`}
+function apply(l){L=l;const t=T[l];document.documentElement.lang=l;document.documentElement.dir=l=="ar"?"rtl":"ltr";
+ document.querySelectorAll("[data-i]").forEach(e=>{if(t[e.dataset.i])e.textContent=t[e.dataset.i]});
+ $("#lang").textContent=t.btn;words(t.h1);
+ const m=t.mq.map(x=>`${x}<span>✦</span>`).join("");$("#mq").innerHTML=m+m+m+m;
+ $("#tel").textContent="+"+PHONE;$("#tel").href=$("#call").href="tel:+"+PHONE;$("#wa").href="https://wa.me/"+PHONE}
+apply("en");
+$("#lang").onclick=()=>apply(L=="en"?"ar":"en");
+document.querySelectorAll("#sw button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll("#sw button").forEach(x=>x.setAttribute("aria-pressed",x==b));
+ document.documentElement.style.setProperty("--br",b.dataset.c);C=b.dataset.n});
+$("#f").onsubmit=e=>{e.preventDefault();window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(T[L].msg($("#n").value,$("#p").value,$("#s").value,C)),"_blank")};
+addEventListener("scroll",()=>$("#nav").classList.toggle("s",scrollY>20),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+$("#y").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
